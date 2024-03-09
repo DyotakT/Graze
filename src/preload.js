@@ -2,7 +2,7 @@
 // https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
 const { contextBridge, ipcRenderer } = require('electron')
 const electron = require('electron')
-
+var screenElectron = electron.screen
 contextBridge.exposeInMainWorld('myAPI', {
   desktop: true,
 })
